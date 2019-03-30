@@ -1,0 +1,36 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+}
+
+@media(max-width: 800px){
+  .mobibar {
+    padding: 10%;
+  }
+  
+}
+
+@media (min-width: 800px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  .mobibar {
+    background-color: #fff !important;
+    min-width: 25%;
+    border-right: 1px solid #cccccc;
+    padding-top: 8%;
+  }
+}
