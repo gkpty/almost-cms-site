@@ -24,7 +24,64 @@
         <div class="mobibar" id="sidebar-wrapper">
           <div class="">
             <div class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+              <div class="dropdown list-group-item p-0">
+                <button class="dropbtn" name="intro-dropdown">Introduction
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="intro-dropdown">
+                  <a href="#intro-uses"><span>What's almost used for?</span></a>
+                  <a href="#intro-structure"><span>Project Structure</span></a>
+                  <a href="#intro-components"><span>Main Components</span></a>
+                  <a href="intro-amplify"><span>AWS Amplify</span></a>
+                  <a href="intro-mutations"><span>Mutations</span></a>
+                  <a href="intro-queries"><span>Queries</span></a>
+                  <a href="intro-install"><span>Install Almost CMS</span></a>
+                </div>
+              </div>
+              <div class="dropdown list-group-item p-0">
+                <button class="dropbtn" name="app-dropdown">The Almost CMS App
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="app-dropdown">
+                  <a href="#app-architecture"><span>Architecture</span></a>
+                  <a href="#app-structure"><span>Directory Structure</span></a>
+                  <div class="sub-dropdown">
+                    <button class="dropbtn" name="app-dependencies-dropdown"><span>Dependencies</span>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="app-dependencies-dropdown">
+                      <a href="#app-dependencies-wsygeditor"><span>WSYG Editor</span></a>
+                      <a href="#app-dependencies-axios"><span>Axios</span></a>
+                      <a href="#app-dependencies-amplify"><span>Amplify</span></a>
+                      <a href="#app-dependencies-react"><span>React</span></a>
+                      <a href="#app-dependencies-graphql"><span>GraphQl</span></a>
+                    </div>
+                  </div>
+                  <div class="sub-dropdown">
+                      <button class="dropbtn" name="app-amplify-dropdown"><span>AWS Amplify</span>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="app-amplify-dropdown">
+                        <a href="#app-amplify-authentication"><span>Authentication</span></a>
+                        <a href="#app-amplify-storage"><span>Storage</span></a>
+                        <a href="#app-amplify-api"><span>API</span></a>
+                        <a href="#app-amplify-deployment"><span>Deployment</span></a>
+                      </div>
+                  </div>
+                  <div class="sub-dropdown">
+                      <button class="dropbtn" name="app-react-dropdown"><span>React Components</span>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="app-react-dropdown">
+                        <a href="#app-react-addToStorage"><span>AddToStorage</span></a>
+                        <a href="#app-react-copyToBucket"><span>CopyToBucket</span></a>
+                        <a href="#app-react-createItemIndex"><span>CreateItemIndex</span></a>
+                        <a href="#app-react-AddItem"><span>Deployment</span></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
               <a href="#" class="list-group-item list-group-item-action">Shortcuts</a>
               <a href="#" class="list-group-item list-group-item-action">Overview</a>
               <a href="#" class="list-group-item list-group-item-action">Events</a>
@@ -187,9 +244,11 @@
           </div>
         </div>
       </section>
+    </div>
+  </div>
 
       <!-- Footer -->
-      <footer class="bg-primary py-5">
+      <footer class="bg-primary py-5" style="z-index: 5;">
         <div class="container-fluid">
           <div class="row small text-center text-muted">
             <div class="col-md-6">

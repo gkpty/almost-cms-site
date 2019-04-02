@@ -6,7 +6,7 @@ $('body').scrollspy({
 
 // Collapse Navbar
 var navbarCollapse = function() {
-  if ($("#mainNav").offset().top > 50) {
+  if ($("#mainNav").offset().top > 10) {
     $("#mainNav").addClass("navbar-shrink");
   } else {
     $("#mainNav").removeClass("navbar-shrink");
